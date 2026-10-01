@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Estructura con Columnas</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #d7caf6;
+            padding: 10px 20px;
+        }
+
+        /* Estilo para controlar el tamaño fijo del logotipo pequeño */
+        .logo-pequeno {
+            width: 50px;
+            /* Ajusta el tamaño que desees */
+            height: auto;
+            display: block;
+        }
+
+        /* Estilo para que la imagen de la cabecera sea responsiva y no se desborde */
+
+
+        .logo-cabecera {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            /* Espacio entre la imagen y el título */
+        }
+
+        .barra-navegacion {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color:rgb(255, 176, 242);
+            background-color:rgb(232, 173, 244);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        
+        .boton-nav:hover {
+            background-color: rgb(188, 140, 188);
+            color:rgb(161, 213, 255);
+        }
+
+        .boton-nav.activo {
+            background-color: rgb(255, 177, 220);
+            color:rgb(255, 173, 191);
+            font-weight: bold;
+        }
+        
+
+        main {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        aside {
+            width: 25%;
+
+            background-color: #ee99ff;
+            padding: 15px;
+        }
+
+
+        section { 
+            width: 75%;
+            background-color: #d2aaf8;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="margin: 0;">Mi Sitio Web</h1>
+            <nav class="barra-navegacion">
+                <a href="bri.html" class="boton-nav">Inicio</a>
+                <a href="bri2.html" class="boton-nav">Bio.</a>
+                <a href="bri3.html" class="boton-nav activo">Life</a>
+
+            </nav>
+        </div>
+        <img src="image.png" alt="Logo de Mi Sitio Web" class="logo-cabecera">
+    </header>
+    <main>
+        <aside>
+            <h3>Barra Lateral</h3>
+            <p>Enlaces, publicidad o categorías.</p>
+        </aside>
+        <section>
+            <article>
+                <h2>Artículo Principal</h2>
+                <p>Hola soy Britanny , soy muy timida...</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+</body>
+
+</html
